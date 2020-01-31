@@ -1,3 +1,4 @@
+a=[1, 2, 3]
 import nltk
 import string
 import pickle

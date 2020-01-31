@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Ham Spam Detector</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+  <body style="background-color:#e3f7d5;">
+
+
+	<div class="ml-container" style="text-align: center;" >
+    <br>
+    <br>
+		<form action="{{ url_for('predict')}}" method="POST">
+		<h1 style="color:#e04b05;">Put your message : </h1>
+    <br>
+    <br>
+		<textarea name="comment" rows="4" cols="50" style="background-color:#f7f5da;" ></textarea>
+		<br/>
+    <br>
+    <br>
+
+		<input type="submit" class="btn-info" value="predict" style="padding: 32px 16px; font-size: 20px;">
+
+	</form>
+
+	</div>
+
+
+  </body>
+</html>
